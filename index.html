@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link href="https://fonts.googleapis.com/css?family=Quattrocento+Sans" rel="stylesheet">
+  <title>REFLECTION GENERATOR</title>
+  <link rel="stylesheet" href="css/site.css">
+
+</head>
+
+<body>
+
+  <a href="index.html">
+    <img id="headpic" src="images/head.png" />
+  </a>
+
+  <!-- <div id="knopp" onclick="newQuote()">Just give me a fucking question</div> -->
+
+  <br>
+  <h3>CHOOSE TYPE OF REFLECTION AND PRESS GENERATE</h3>
+
+  <div id="refelectionSelector">
+    <!-- The second value will be selected initially -->
+    <select id="groupmembers3" type="select">
+      <!--Supplement an id here instead of using 'name'-->
+      <option value="0" selected>Type of reflection:</option>
+      <option value="1">Backward-Looking:</option>
+      <option value="2">Inward-Looking:</option>
+      <option value="3">Outward-Looking:</option>
+      <option value="4">Forward-Looking:</option>
+    </select>
+    <!-- THIS IS A TEEEEEEST! -->
+    <br>
+    <label class="checklist">Post Project
+      <input type="radio" checked="checked" name="radio">
+      <span class="checkmark"></span>
+    </label>
+    <label class="checklist">Inward-looking
+      <input type="radio" name="radio">
+      <span class="checkmark"></span>
+    </label>
+    <label class="checklist">Zoomed-out-prespective
+      <input type="radio" name="radio">
+      <span class="checkmark"></span>
+    </label>
+    <label class="checklist">Forward-looking
+      <input type="radio" name="radio">
+      <span class="checkmark"></span>
+    </label>
+
+    <div class="center-wrap">
+      <div class="button">
+        <a href="#" onClick="generateAnser()">Generate question
+          <span class="shift">›</span>
+        </a>
+        <div class="mask"></div>
+      </div>
+    </div>
+
+  </div>
+
+  <br>
+  <center>
+    <!-- <div id="knopp" onclick="newQuote()">Just give me a fucking question</div> -->
+    <link href='https://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+
+
+    <br>
+    <br>
+    <div id="quoteDisplay">
+    
+
+      <div id="question">
+        Choose what type of reflection
+      </div>
+
+      <!-- FrÃĨgorna stÃĨr hÃĪr -->
+      <div id="countdown" class="text-center">
+        <form action="#" method="post" class="startend">
+          <img id="watchpic" src="images/watch.png" style="width:61,4px;height:46px;" />
+          <br>
+          <!-- <h3>Countdown Timer: &nbsp;</h3> -->
+          <span id="showmns">00</span>:
+          <span id="showscs">00</span>
+          <br> Min:
+          <input type="text" id="mns" name="mns" value="0" size="3" maxlength="3" /> &nbsp; &nbsp; Sec:
+          <input type="text" id="scs" name="scs" value="0" size="2" maxlength="2" />
+          <br/>
+          <br>
+          <input type="button" class="litenknapp" id="btnct" value="START" />
+          <input type="button" class="litenknapp" id="btnct_res" value="RESTART" />
+          <input type="button" class="litenknapp" id="btnct_end" value="END" />
+          <br>
+        </form>
+        <br>
+        <div id="countdownSlut"></div>
+      </div>
+
+      <div class="mp3">
+        <audio controls preload="metadata" style=" width:300px;">
+          <source src="file:///Users/Robin/Dropbox/reflectiongenerator/sound/test_song.mp3" type="audio/mpeg"> Your browser does not support the audio element.
+        </audio>
+        <br />
+        <a href="http://scriptgenerator.net/really-simple-embed-audio-player-script/" title="Generate here your HTML5 audio player"
+          style="text-align: right;display: block"></a>
+      </div>
+
+    </div>
+
+
+
+    <button id="btn">New to reflections?</button>
+    <div class="container" id="container">
+      <div class="inner">
+        <div class="content">
+          
+          The purpose of group reflections: <br>
+            -       Express thoughts, feelings and opinions about a shared experience <br>
+            -       Build openness and trust<br>
+            -       Draw out key learnings and insights to use in subsequent experiences<br>
+             
+            Reflecting involves considering, thinking about and exploring what the event:<br>
+            -       meant to me<br>
+            -       how I relate to what has happened<br>
+            -       what I experienced and how I feel about it<br>
+             
+            How<br>
+            -       Step 1. Take some time to reflect on your own<br>
+            -       Step 2. Sit in a circle where everyone can see each other<br>
+            -       Step 3. Use the Reflection Generator Timer to make sure everyone has an equal amount of sharing-time<br>
+            -       Step 4. Share your reflections and insights<br>
+             
+             
+            Guidelines for reflections<br>
+            -       Speak from your individual perspective (“I-statements”)<br>
+            -       Avoid generalizations (e.g. “everybody” and “some people”)<br>
+            -       This is not a debate! Don’t interrupt others when they are sharing.<br>
+            -       Practice <a href="http://toolbox.hyperisland.com/active-listening">
+              active listening </a>when others are sharing their reflections (+ länk http://toolbox.hyperisland.com/active-listening )
+             
+            Individual reflection?<br>
+            More info here http://toolbox.hyperisland.com/reflection-individual
+            
+
+
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer">This is a footer</div>
+  </center>
+
+  <p></p>
+  <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+    crossorigin="anonymous"></script>
+  <script src="js/site.js"></script>
+</body>
+
+</html>

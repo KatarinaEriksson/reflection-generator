@@ -1,0 +1,12 @@
+body {
+    background-color: rgb(213, 199, 188);
+    text-align: center;
+}
+#panelpic1{
+    content: url(../images/Head.png);
+    width: 654px;
+    height: 393px;
+    vertical-align: middle;               
+   }
+
+   
