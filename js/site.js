@@ -63,15 +63,21 @@ function myFunction() {
 //     document.getElementById("why").innerHTML = "YOU CLICKED ME!";
 // }
 
-function newzQuote(indexArr) {
-  console.log("newzQuote:");
-  if (indexArr == 001) {
+function newzQuote(input) {
+  var tempArray;
+  if (input == 1) {
     tempArray = backwardArr;
-  } else if (indexArr == 002) {
+    $("#b1").css("border", "3px solid #ffffff");
+    $("#b2").css("border", "none");
+    $("#b3").css("border", "none");
+    $("#b4").css("border", "none");
+  } else if (input == 2) {
     tempArray = inwardArr;
-  } else if (indexArr == 003) {
+    $("#b1").css("border", "none");
+    $("#b2").css("border", "3px solid #ffffff");
+  } else if (input == 3) {
     tempArray = outwardArr;
-  } else if (indexArr == 004) {
+  } else if (input == 4) {
     tempArray = forwardArr;
   }
 //HÄR LÄGGER VI IN DROPDOWN SAMT TIMER, SE POOP//
@@ -85,25 +91,24 @@ function newzQuote(indexArr) {
 
 function newQuote() {
   var randomNumber = Math.floor(Math.random() * (quotes.length));
-  document.getElementById('quoteDisplay').innerHTML = quotes[randomNumber];
+  document.getElementById('quotedisplay').innerHTML = quotes[randomNumber];
 }
 
-var generateAnser = function(){
-  generateQuestion();
-
-  console.log("klick!!!"); // här gör vi magi 
-  $("#quoteDisplay").css("display", "block"); // visa 
+function generateAnswer(){
+  console.log("fiuck!")
+  $("#quotedisplay").css("display", "block"); // visa 
   // $("#generate").css("display", "none"); // göm 
   // $("#refelectionSelector").css("display", "none");
 }
 
 $(".button").on("click", );
 
-var generateQuestion = function () {
+var generateQuestion = function () { // radera!
   var curChoice = $("#groupmembers3").val();
   console.log("selected value is!", curChoice)
   if (curChoice == 1) {
     newzQuote(001);
+    
   } else if (curChoice == 2) {
     newzQuote(002);
   } else if (curChoice == 3) {
@@ -111,7 +116,7 @@ var generateQuestion = function () {
   } else if (curChoice == 4) {
     newzQuote(004);
   }
-  $("#quoteDisplay").css("display", "block")
+  $("#quotedisplay").css("display", "block")
 }
 
 
